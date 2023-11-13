@@ -1,0 +1,113 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+  body {
+    background-color: #2e1e6a;
+  }
+  .container {
+    width: 350px;
+    position: relative;
+    transform: translate(-50%);
+    top: 50% auto;
+    left: 50%;
+  }
+  #card{
+    position: relative;
+    width: 100%;
+    padding: 30px 20px;
+    box-shadow: 0 20px 30px rgba(255, 255, 255, 0.15);
+    border-radius: 10px;
+  }
+  #card img {
+    display: block;
+    max-width: 150px;
+    max-height: 200px;
+    position: relative;
+    margin: 20px auto;
+    transition: transform 0.3s ease-in-out;
+  }
+  #card img:hover,
+  #card:focus {
+    transform: scale(1.05); /* Aumenta o tamanho da imagem quando o mouse passa por cima */
+  }
+  .hp {
+    width: 80px;
+    background-color: #ffffff;
+    text-align: center;
+    padding: 8px 0;
+    border-radius: 30px;
+    margin-left: auto;
+    font-weight: 400;
+  }
+  .poke-name {
+    text-align: center;
+    font-weight: 600;
+  }
+  .types {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0 40px 0;
+  }
+  .hp span,
+  .types span {
+    font-size: 12px;
+    letter-spacing: 0.4px;
+    font-weight: 600;
+  }
+  .types span {
+    padding: 5px 20px;
+    border-radius: 20px 50px 25px 60px;
+        color: #ffffff;
+  }
+  .stats {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    padding: 0px 10px 0px 10px;
+    border-radius: 40px 40px 20px 20px;
+  }
+  .stats p {
+    color: #0f0f0f;
+  }
+  #btn {
+    display: block;
+    padding: 15px 60px;
+    font-size: 18px;
+    background-color: #ffffff;
+    color: #000000;
+    position: relative;
+    margin: 10px auto;
+    border: none;
+    border-radius: 20px 50px 25px 60px;
+  }
+
+  .back-nav {
+    background-color: #2e1e6a; /* Cor de fundo do nav */
+    padding: 10px 0; /* Espaçamento superior e inferior */
+    text-align: center; /* Centraliza o conteúdo de texto no eixo horizontal */
+  }
+  
+  .back-link {
+    display: inline-block; /* Permite que o padding e o border-radius sejam aplicados */
+    background-color: #fff; /* Cor de fundo do link */
+    color: #2e1e6a; /* Cor do texto do link */
+    padding: 10px 20px; /* Espaçamento interno do link */
+    margin: 5px; /* Espaçamento externo do link */
+    text-decoration: none; /* Remove o sublinhado do link */
+    font-size: 1.2em; /* Define um tamanho de fonte maior */
+    transition: all 0.3s ease-in-out; /* Animação suave para todas as propriedades */
+    border-radius: 20px 50px 25px 60px; /* Rádios da borda para os cantos */
+  }
+  
+  .back-link:hover,
+  .back-link:focus {
+    color: #dcd0ff; /* Muda a cor do texto ao passar o mouse ou focar */
+    background-color: #4b3387; /* Altera a cor de fundo do link ao passar o mouse ou focar */
+    transform: scale(1.05); /* Aumenta ligeiramente o tamanho do link */
+    text-decoration: none; /* Mantém o link sem sublinhado ao passar o mouse */
+  }
+
